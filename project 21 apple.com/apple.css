@@ -33,8 +33,7 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  padding: 0.5rem 5rem;
-  font-size: 1.3rem;
+  padding: 0.5rem 10rem;
   font-weight: 200;
 }
 
@@ -43,6 +42,8 @@ nav ul .bar {
 }
 
 nav ul li {
+  text-align: center;
+  font-size: 1.3rem;
   border-bottom: 1px solid transparent;
   padding: 0.5rem 0;
   cursor: pointer;
@@ -53,9 +54,8 @@ nav ul li:hover {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
-
-.logo {
-  font-size: 2rem;
+.apple_logo {
+  font-size: large;
   font-weight: 600;
   color: black;
   text-decoration: none;
@@ -253,7 +253,7 @@ nav ul li:hover {
 .content h2 {
   font-size: 5rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   white-space: nowrap; /* ⬅ Prevents text wrapping */
 }
 
@@ -280,7 +280,20 @@ nav ul li:hover {
 .card2 {
   background-image: url(images/iPad.jpg);
 }
+    .logo {
+      font-size: 48px;
+    }
 
+    .ipad {
+      font-weight: bold;
+      color: black;
+    }
+
+    .air {
+      font-style: italic;
+      font-weight: 500;
+      color: #0071e3; /* Apple blue tone */
+    }
 .card3 {
   background-image: url(images/airpods.jpg);
  
@@ -291,6 +304,9 @@ nav ul li:hover {
 .card4 {
  
   background-image: url(images/macbook\ pro.jpg);
+}
+.card2 .gradient-text, .card4 .gradient-text{
+margin-top: 25rem;
 }
 .button {
   width: 50vw;
@@ -381,6 +397,7 @@ position: relative;
 .footer-bottom a:hover {
   text-decoration: underline;
 }
+/* Media Queries */
 
 @media (max-width: 600px) {
   .cards{
@@ -393,7 +410,6 @@ position: relative;
 }
 
 
-/* Media Queries */
 @media (max-width: 768px) {
   html {
     font-size: 50%;
@@ -413,7 +429,7 @@ position: relative;
     cursor: pointer;
   }
 
-  nav .logo {
+  nav .apple_logo {
     display: block;
   }
 
